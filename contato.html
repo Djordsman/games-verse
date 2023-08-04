@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/x-icon" href="imgs/Doom-1-icon.png">
+    <title>Contato</title>
+</head>
+<body>
+    <!-- Topo do site -->
+    <header id="topo">
+        <div class="container">
+            <div class="logo">
+                <img src="imgs/Doom-1-icon.png" alt="icondoom"><a href="index.html">Doom-Verse</a>
+            </div>
+
+            <nav class="menu">
+                <ul class="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="layoutcolun.html">Layout de Colunas</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header> <!-- end of top -->
+
+    <!-- conteúdo -->
+    <main id="conteudo-contato">
+        <div class="container">
+            <div class="info">
+                <h1>Entre em contato</h1>
+                <h2 class="subtitle">Fale conosco preenchendo o nosso formulário abaixo:</h2>
+
+                <form class="contato" enctype="multipart/form-data" method="post">
+                    <fieldset class="fields">
+                        <legend class="dados">Dados Pessoais</legend>
+                            <label>Seu nome</label>
+                            <input type="text" name="nome" placeholder="Completo" required>
+
+                            <label>CPF</label>
+                            <input class="cpf" type="text" name="cpf" value="000.111.222-99" placeholder="123.456.789-10" readonly>
+                            
+                            <label> Digite seu <e-mail>e-mail</e-mail></label>
+                            <input type="email" name="email" placeholder="Seu email" required>
+                            
+                            <label>Telefone</label>
+                            <input type="tel" name="telfone" placeholder="Insera seu n° com DDD">
+
+                            <label>Senha</label>
+                            <input type="password" minlength="5" name="senha" placeholder="Põe a senha aqui caraio!!">
+                            
+                            <Label>Idade</Label>
+                            <input type="number" name="numeros" placeholder="Idade Atual">
+
+                            <label>Data de Nascimento</label>
+                            <input type="date" name="Nascimento">
+
+                            <h4>Qual é o seu gênero?</h4>
+                            <label>
+                                <input type="radio" name="genero" value="Masculino" checked>Masculino
+                            </label>
+        
+                            <label>
+                                <input type="radio" name="genero" value="feminino">Feminino
+                            </label>
+                            
+                            <label>Envie um arquivo:</label>
+                            <input type="file" name="arquivo">
+                    </fieldset>
+                    
+                    <fieldset class="fields-2">
+                        <legend class="others">Outros Dados:</legend>
+
+                            <label>Data e Hora</label>
+                            <input type="datetime-local" name="data-hora">
+
+                            <div class="horas">
+                            <label>Hora</label>
+                            <input type="time" name="horas">
+                            </div>
+                            
+                            <label class="escala">Escala</label>
+                            <input type="range" min="0" max="9" name="nivel">
+
+                            <h4 class="experi">Ja teve experiência com:</h4>
+                            <Label>
+                                <input type="checkbox" name="html5" valeu="Html5">HTML5
+                            </Label>
+
+                            <label>
+                                <input type="checkbox" name="css3" value="Css3">CSS3
+                            </label>
+
+                            <label>
+                                <input type="checkbox" checked name="javascript" value="JavaScript">JavaScript
+                            </label>
+                            
+                                <label><h4 class="assunto">Assunto:</h4></label>
+                                <div class="select">
+                                    <select name="assunto-ctt">
+                                        <option>-- Selecione --</option>
+                                            <optgroup label="Dúvidas">
+                                                <option>Sobre Serviços</option>
+                                                <option>Como comprar</option>
+                                            </optgroup>
+                                            <optgroup label="Proposta">
+                                                <option>Serviços</option>
+                                                <option>Produtos</option>
+                                            </optgroup>
+                                            <optgroup label="Finanças">
+                                                <option>Orçamento</option>
+                                                <option>Observações / Sugestões</option>
+                                            </optgroup>
+                                            <input class="tecs" list="tecs" name="tecs" placeholder="Selecione uma Tech:">
+                                    </select>
+                                </div>                    
+                            <label><h4 class="msg">Envie-nos uma mesagem!</h4>
+                                <textarea name="msg" placeholder="Deixe aqui sua sugestão, dúvida ou elogio. Reclamações somente no balcão de atendimento do procon, registrando a próprio punho a queixa, no livro de manifestações que fica somente no procon da capital do acre. Atendimento somente as quartas feiras das 10:47 as 10:58 apresentando certidão de casamento e cnpj para que seja enviado o texto e se faltar  algum documento, a nossa scaneadora não funciona e não esqueça a caventa monblan, pois o papel borra e a tinta espalha se for escrita com qualquer outra caneta, caso queira reclamar, boa viagem." cols="50" rows="10"></textarea> 
+                            </label>
+                    </fieldset>
+
+                    
+                        <input class="bt" type="submit" name="enviar" value="Enviar Cadastro">
+                        <input class="bt-reset" type="reset" name="reset" value="Reset">
+                    
+                </form>
+ 
+                    <datalist id="tecs">
+                        <option value="HTML5">Html5</option>
+                        <option value="CSS3">Css3</option>
+                        <option>JavaScript</option>
+                        <option>React</option>
+                        <option>Banco de Dados</option>
+                    </datalist>
+            </div>
+            <aside class="lateral-contato">
+                <h2>Primeiras Versões Oficiais:</h2>
+                    <div class="notícias">
+                        <div class="notícias-contato">
+                            <img src="../imgs/DOOM.jpg" alt="noticiadoom">
+                            <h3>Doom [1993]</h3>
+                        </div>
+                        <div class="notícias-contato">
+                            <img src="../imgs/icon0.jpeg" alt="noticiadoom">
+                            <h3>Doom II [1994]</h3>
+                        </div>
+                        <div class="notícias-contato">
+                            <img src="../imgs/PSX-final-doom-box-cover.jpg" alt="noticiadoom">
+                            <h3>Final Doom [1996]</h3>
+                        </div>
+                        <div class="notícias-contato">
+                            <img src="../imgs/263-doom-64-nintendo-64-capa-1.jpg" alt="noticiadoom">
+                            <h3>Doom 64</h3>
+                        </div>
+                    </div>
+                        
+                    <div class="menu-lateral-ctt">
+                        <h2>Nossos Serviços</h2>
+                            <ul>
+                                <li><a href="#">História</a></li>
+                                <li><a href="#">Personagens</a></li>
+                                <li><a href="#">Armamentos</a></li>
+                                <li><a href="#">Fases</a></li>
+                                <li><a href="#">Músicas</a></li>
+                            </ul>
+                    </div>
+            </aside>
+
+            <div class="maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3050.947287899682!2d-96.71920814328823!3d32.968825685581656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c1f3cded7654f%3A0xcb06a9f7e6046ebd!2sid%20Software!5e1!3m2!1spt-BR!2sbr!4v1687989504585!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer id="rodape">
+        <p>Prof. Roberto - All rights refuckingserved</p>
+    </footer>
+</body>
+</html>
