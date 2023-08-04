@@ -224,14 +224,15 @@ figure {
 
 .linha button {
     font-size: 25px;
-    color: #042cdb;
+    background: #042cdb;
+    color: #fff;
     border: solid 1.5px;
     border-radius: 10px;
 }
 
 .linha button:hover {
-    background: #042cdb;
-    color: #fff;
+    background: #fff;
+    color: #042cdb;
     cursor: pointer;
 }
 
