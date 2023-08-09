@@ -1,0 +1,536 @@
+body {
+    margin: 0;
+    color: #333333;
+    font-family: 'Roboto', sans-serif;
+}
+
+body ::selection {
+    color: #06eff7;
+    background: #000000;
+}
+
+#topo {
+    background: #000000;
+    width: 100%;
+    height: 60px;
+}
+
+.logo {
+    float: left;
+    font-size: 26px;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+.logo img{
+    vertical-align: middle;
+    height: 50px;
+}
+
+.logo a {
+    color: rgb(253, 253, 253);
+    text-decoration: none;
+    padding-left: 5px;
+}
+
+.menu {
+    float: right;
+    padding-right: 20px;
+}
+
+.logo a:hover {
+    color: #06eff7;
+}
+
+.menu .nav {
+    list-style: none;
+    padding-bottom: 20px;
+}
+
+.menu .nav li{
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+.nav li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    height: 100px;
+}
+
+.nav li a:hover {
+    color: rgb(12, 223, 195);
+    transition-duration: 1s;
+}
+
+#banner {
+    background: url(imgs/new-doom.jpg) center;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+#banner h2 {
+    text-align: center;
+    margin: 0;
+    padding-top: 130px;
+    font-size: 62px;
+    color: #ffffff;
+    position: relative;
+    text-shadow: 2px 5px 5px #333;
+}
+
+#banner.filtro {
+    width: 100%;
+    height: 100%;
+    background: #333;
+    position: absolute;
+    top: 0; left: 0;
+    opacity: 0.2;
+}
+
+/* seletores irmaos 
+
++ seleciona o 1° irmão e 
+~ seleciona todos */ 
+
+/* Seletores Filhos Diretos:
+> Filhos diretos!!!! */
+
+.irmas ~p {
+    border: solid 2px #4c05f3;
+    padding: 5px;
+    background: aqua;
+}
+
+.info p::first-letter {
+    font-size: 40px;
+    text-align: center;
+    color: #042cdb;
+}
+
+.info p::first-line {
+    font-weight: bold;
+}
+
+#conteudo {
+    margin-bottom: 1650px;
+}
+
+#conteudo .figura {
+    width: 141%;
+    border-radius: 5px;
+}
+
+figure {
+    margin: -7px;
+}
+
+#conteudo .lateral{
+    width: 29%;
+    float: right;
+    padding: 16px;
+    border: solid 1px #650492;
+    box-sizing: border-box;
+}
+
+.lateral h2 {
+    color: #d40606
+}
+
+.lateral .ultimas-notícias {
+    overflow: hidden;
+    margin-bottom: 10px;
+    color: #040008;
+    padding-left: 10px;
+}
+
+.lateral .ultimas-notícias img {
+    float: left;
+    width: 40%;
+    border: solid 1px #042cdb;
+}
+
+.menu-lateral{
+    margin-top: 10px;
+}
+
+.menu-lateral ul {
+    list-style: none;
+    padding: 0%;
+    height: 230px;
+}
+
+.menu-lateral ul li {
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.menu-lateral ul li::after {
+    content: "Texto após a tag";
+    color: #06eff7;
+}
+
+.menu-lateral li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    padding-left: 1px;
+    width: 50%;
+    display: inline-block;
+}
+
+.menu-lateral li a:hover {
+    color: #06eff7;
+}
+
+.menu-lateral li:hover{
+    background: #272930;
+}
+
+.subtitle {
+    font-size: 18px;
+    color:#062af7;
+    margin: 0;
+}
+
+.bloco-colunas {
+    columns: 4 100px;
+    column-gap: 20px;
+}
+
+/* -- Layout em Colunas -- */
+
+#conteudo-layout {
+    height: 660px;
+}
+
+.info-layout {
+    height: 820px;
+    border: solid 5px aqua;
+    background: rgb(247, 247, 246);
+}
+
+.info-layout h1{
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    color: #3d0d0d;
+    margin-top: 25px;
+    margin-bottom: 0px;
+}
+
+.linha button {
+    font-size: 25px;
+    background: #042cdb;
+    color: #fff;
+    border: solid 1.5px;
+    border-radius: 10px;
+}
+
+.linha button:hover {
+    background: #fff;
+    color: #000000;
+    cursor: pointer;
+}
+
+.linha .colun {
+    width: 33%;
+    box-sizing: border-box;
+    text-align: center;
+    float: left;
+    margin-top: 25px;
+    padding: 0px 20px;
+}
+
+.colun .imagem{
+    width: 100%;
+    min-height: 180px;
+    max-height: 228px;
+    background: #a465f5;
+    overflow: hidden;
+}
+
+.imagem img {
+    width: 100%;
+}
+
+.linha .imagem:hover {
+    box-shadow: 3px 3px 5px #333;
+}
+
+a.bt-lm {
+    color: #062af7;
+    border: solid 2px;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* ~ Página Contato - Formulário ~ */
+
+.container h1 {
+    text-align: left;
+    color: #d40606;
+    margin-top: 35px;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+.contato .fields {
+    box-sizing: border-box;
+    width: 40%;
+    float: left;
+    border-radius: 10px;
+    border: solid 3px #000;
+    padding-bottom: 10px;
+}
+
+.contato .fields-2 {
+    box-sizing: border-box;
+    width: 40%;
+    float: left;
+    border-radius: 10px;
+    border: solid 3px #000;
+    height: 819px;
+}
+
+.horas {
+    position: relative;
+    top: 10px;
+}
+
+.escala {
+    position: relative;
+    top: 15px;
+}
+
+figcaption {
+    padding-top: 6px;
+    font-style: italic;
+    font-weight: bolder ;
+    color: rgb(120, 136, 141);
+}
+
+#conteudo .container{
+    width: 70%;
+    float: left;
+    padding: 10px 10px;
+    box-sizing: border-box;
+}
+
+.dados {
+    color: #d40606;
+    margin-top: 18px;
+}
+
+.others{
+    color: #062af7;
+    margin-top: 18px;
+}
+
+.experi {
+    margin-top: 0px;
+}
+
+.assunto {
+    position: relative;
+    top: 20px;
+    margin-top: 1px;
+}
+
+.select {
+    position: relative;
+    top: 10px;
+    margin-bottom: 0px;
+}
+
+.tecs {
+    margin-top: 10px;
+}
+
+.msg {
+    margin-top: 7px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    margin-top: 5px;
+    height: 150px;
+}
+
+label .msg {
+    margin-top: 37px;
+}
+
+.contato input {
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 2px #2d045c;
+    width: 350px;
+    background: #f7f7f7;
+    margin-bottom: 5px;
+}
+
+.contato input:focus {
+    background: #2d045c;
+    color: white;
+    font-weight: bold;
+    width: 96%;
+    transition: 0.7s;
+}
+
+.contato label {
+    margin-top: 7px;
+    width: 90%;
+    display: inline-block;
+}
+
+.contato .cpf {
+    background: #cac6c6;
+}
+
+.contato input[type="color"] {
+    min-width: 25px;
+    padding: 0;
+}
+
+.contato input[type="checkbox"], .contato input[type="radio"]{
+    width: 40px;
+    margin-left: -10px;
+}
+
+input.bt {
+    background: #062af7;
+    color: #fff;;
+    width: auto;
+    border: solid 2px #fff;
+    cursor: pointer;
+}
+
+input.bt-reset {
+    background: #062af7;
+    color: #fff;;
+    width: auto;
+    border: solid 2px #fff;
+    cursor: pointer;
+}
+
+input.bt:hover {
+    background: #fff;
+    color: #062af7;
+    cursor: pointer;
+    border: solid 2px #062af7;
+}
+
+input.bt-reset:hover {
+    background: #fff;
+    color: #062af7;
+    cursor: pointer;
+    border: solid 2px #062af7;
+}
+
+#conteudo-contato {
+    height: 1380px;
+}
+
+.lateral-contato {
+    width: 29.4%;
+    float: right;
+    padding: 16px;
+    border: solid 1px #650492;
+    box-sizing: border-box;
+    margin-right: 5px;
+}
+
+.lateral-contato h2 {
+    color: #d40606
+}
+
+.lateral-contato .notícias-contato {
+    overflow: hidden;
+    margin-bottom: 10px;
+    color: #040008;
+    padding-left: 10px;
+}
+
+.lateral-contato .notícias-contato img {
+    float: left;
+    width: 40%;
+    border: solid 1px #042cdb;
+}
+
+.menu-lateral-ctt {
+    margin-top: 10px;
+}
+
+.menu-lateral-ctt ul {
+    list-style: none;
+    padding: 0%;
+    height: 230px;
+}
+
+.menu-lateral-ctt ul li {
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.menu-lateral-ctt ul li:first-child a:hover{
+    color: rgb(243, 4, 4);
+}
+
+.menu-lateral-ctt ul li:last-child a:hover{
+    color: rgb(243, 4, 4);
+}
+
+.menu-lateral-ctt ul li:nth-child(even) {
+    background: #4c05f3;
+}
+
+.menu-lateral-ctt li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    padding-left: 1px;
+    width: 50%;
+    display: inline-block;
+}
+
+.menu-lateral-ctt li a:hover {
+    color: #06eff7;
+}
+
+.menu-lateral-ctt li:hover{
+    background: #272930;
+}
+
+.info {
+    width: 65%;
+    float: left;
+    margin-left: 15px;
+}
+
+.maps iframe {
+    margin-top: 20px;
+    width: 1404px;
+    height: 520px;
+    margin-left: 15px;
+    border-top: solid 10px #000;
+}
+    
+#rodape {
+    background: #000000;
+    color: aqua;
+    text-align: center;
+    height: 45px;
+    margin-top: 170px;
+}
+
+#rodape p{
+    padding-top: 15px;
+    margin-bottom: -1px;
+}
