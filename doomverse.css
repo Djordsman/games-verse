@@ -64,6 +64,24 @@ body ::selection {
     transition-duration: 1s;
 }
 
+/* Criando animação: */
+@keyframes multicolor {
+    0%  {color: whitesmoke;}
+    25% {color: yellow;}
+    50% {color: darkorange;}
+    100%{color: rgb(241, 8, 8);}
+}
+
+/* Aplicando a animação: */
+#banner h2 {
+    animation-name: multicolor;
+    animation-duration: 5s;
+    animation-delay: 1.3s;
+    animation-fill-mode: forwards; /*o backwards retorna p/a 1º cor, 
+    e o forwards que mantém na ultima*/
+    animation-iteration-count: infinite;    
+}
+
 #banner {
     background: url(imgs/new-doom.jpg) center;
     background-size: cover;
