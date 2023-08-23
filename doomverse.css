@@ -133,7 +133,7 @@ body ::selection {
 }
 
 #conteudo {
-    margin-bottom: 1650px;
+    margin-bottom: -50px;
 }
 
 #conteudo .figura {
@@ -205,6 +205,25 @@ figure {
 
 .menu-lateral li:hover{
     background: #272930;
+}
+
+.flutuar {
+    position: relative;
+    top: 40px;
+}
+
+.flutuar img {
+    display: block;
+    animation-name: flutuar;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes flutuar {
+    from{position: relative; top: 0;}
+    to{position: relative; top: 50px;}
 }
 
 .subtitle {
