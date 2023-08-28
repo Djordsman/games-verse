@@ -221,6 +221,10 @@ figure {
     animation-timing-function: ease-in-out;
 }
 
+.flutuar img:hover{
+    animation-play-state: paused;
+}
+
 @keyframes flutuar {
     from{position: relative; top: 0;}
     to{position: relative; top: 50px;}
