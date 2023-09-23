@@ -10,9 +10,10 @@ body ::selection {
 }
 
 #topo {
-    background: #000000;
     width: 100%;
-    height: 60px;
+    height: 60%;
+    overflow: hidden;
+    background: #000;
 }
 
 .logo {
@@ -28,7 +29,7 @@ body ::selection {
 }
 
 .logo a {
-    color: rgb(253, 253, 253);
+    color: rgb(199, 4, 4);
     text-decoration: none;
     padding-left: 5px;
 }
@@ -40,6 +41,7 @@ body ::selection {
 
 .logo a:hover {
     color: #06eff7;
+    transition-duration: 1s;
 }
 
 .menu .nav {
@@ -53,7 +55,7 @@ body ::selection {
 }
 
 .nav li a {
-    color: #fff;
+    color: #fffefefb;
     text-decoration: none;
     font-weight: bold;
     height: 100px;
@@ -66,10 +68,11 @@ body ::selection {
 
 /* Criando animação: */
 @keyframes multicolor {
-    0%  {color: whitesmoke;}
-    25% {color: yellow;}
-    50% {color: darkorange;}
-    100%{color: rgb(241, 8, 8);}
+    20% {color: whitesmoke;}
+    40% {color: yellow;}
+    60% {color: darkorange;}
+    80% {color: rgb(241, 8, 8);}
+    100%{color: darkorange}
 }
 
 /* Aplicando a animação: */
@@ -84,9 +87,9 @@ body ::selection {
 
 #banner {
     background: url(imgs/new-doom.jpg) center;
-    background-size: cover;
     width: 100%;
     height: 600px;
+    background-size: cover;
 }
 
 #banner h2 {
@@ -230,6 +233,25 @@ figure {
     to{position: relative; top: 50px;}
 }
 
+@media (max-width: 757px) {
+    .logo{width: 100%; text-align: center;}
+    .menu{width: 100%;}
+    .menu .nav li {
+        display: block;
+        text-align: center;
+        font-size: 18px;
+    }
+    .menu .nav li:last-child{border:none;}
+    #banner h2{padding-top: 80px; font-size: 48px;}
+    #conteudo .info{width: 100%;}
+    #conteudo .lateral{width: 100%;}
+    .lateral > div{width: 50%; float: left;margin-top: 10px;padding: 0 20px;}
+}
+
+@media (max-width: 546px){
+    .lateral > div{width: 100%;}
+}
+
 .subtitle {
     font-size: 18px;
     color:#062af7;
@@ -273,7 +295,7 @@ figure {
 
 .linha button:hover {
     background: #fff;
-    color: #000000;
+    color: #042cdb;
     cursor: pointer;
 }
 
