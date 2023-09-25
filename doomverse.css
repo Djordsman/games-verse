@@ -19,7 +19,7 @@ body ::selection {
 .logo {
     float: left;
     font-size: 26px;
-    padding-top: 5px;
+    padding-top: 15px;
     padding-left: 10px;
 }
 
@@ -29,7 +29,7 @@ body ::selection {
 }
 
 .logo a {
-    color: rgb(199, 4, 4);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     padding-left: 5px;
 }
@@ -37,6 +37,8 @@ body ::selection {
 .menu {
     float: right;
     padding-right: 20px;
+    position: relative;
+    top: 7px;
 }
 
 .logo a:hover {
@@ -233,7 +235,7 @@ figure {
     to{position: relative; top: 50px;}
 }
 
-@media (max-width: 757px) {
+@media (max-width: 390px) {
     .logo{width: 100%; text-align: center;}
     .menu{width: 100%;}
     .menu .nav li {
